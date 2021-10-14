@@ -1,6 +1,8 @@
 language: node_js
+
 node_js:
   - 16.11.0
+  -
 script:
   - "npm run build"
   - "npm run test:nowatch"
@@ -8,4 +10,4 @@ script:
 deploy:
   provider: heroku
   api_key: $HEROKU_TOKEN
-  app: everdes-bookstoreclient
+  app: "everdes-bookstoreclient"
